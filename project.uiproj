@@ -1,0 +1,6 @@
+{
+  "Name": "SkyscannerREF",
+  "ProjectType": "Process",
+  "Description": "Skyscanner sitesindeki uçuşları input excelindeki verilere göre filtreleyerek buna uygun uçuşların çekildiği REF altyapılı bir projedir.",
+  "MainFile": "Main.xaml"
+}
