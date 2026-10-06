@@ -174,16 +174,6 @@ SkyscannerREF/
 
 İlk deneme için projeye özel bir kuyruk, tek satırlık güncel girdi ve kendi e-posta bağlantınızı kullanın. Sonuç Excel'ini ve Orchestrator işlem durumunu birlikte kontrol edin. Testler de kuyruk, tarayıcı ve dosyalar üzerinde işlem yapabilir.
 
-## GitHub'a yüklemeden önce
-
-- `Process/ExtractPageData.xaml` içindeki kişisel alıcı / hesap adreslerini ve bağlantı kimliğini kendi paylaşım politikanıza göre düzenleyin.
-- `Init/Queue_Cleaning.xaml` içindeki kişisel Orchestrator çalışma alanı yolunu paylaşılabilir bir örnekle değiştirin ve kurulum adımlarını koruyun.
-- Excel dosyalarını kişisel veri içermeyen örneklerle paylaşın; çalışma kitabı özellikleri ve OneDrive konum bilgilerini de gözden geçirin.
-- Çalıştırma çıktıları, hata ekran görüntüleri, günlükler ve yerel önbellekleri depoya dahil etmeyin.
-- `.screenshots` gibi tasarım sırasında kullanılan görselleri çalışma anındaki hata ekran görüntülerinden ayırın; gerekli tasarım kaynaklarını kontrol etmeden kaldırmayın.
-- Kullanım ve dağıtım haklarını belirlemek için uygun bir `LICENSE` dosyasını ayrıca ekleyin. Bu README bir lisans tanımlamaz.
-
-Bu doküman mevcut proje dosyaları ve Excel yapısı incelenerek hazırlanmıştır; canlı Skyscanner, Orchestrator veya e-posta üzerinde uçtan uca çalıştırma sonucu içermez.
 
 ---
 
@@ -362,14 +352,3 @@ SkyscannerREF/
 The `Tests/` folder contains REFramework test files for settings loading, application initialization, transaction retrieval, transaction processing, and the main workflow, along with a test template. Some assertions remain as templates or are disabled; the presence of these files does not indicate successful test execution.
 
 For an initial trial, use a dedicated queue, a single input row with a current date, and your own email connection. Check both the output Excel workbook and the Orchestrator transaction status. Tests can also act on queues, the browser, and files.
-
-## Before uploading to GitHub
-
-- Review and update personal recipient / account addresses and the connection ID in `Process/ExtractPageData.xaml` according to your sharing policy.
-- Replace the personal Orchestrator workspace path in `Init/Queue_Cleaning.xaml` with a shareable example and retain the setup instructions.
-- Share Excel files containing sample data without personal information; also review workbook properties and OneDrive location metadata.
-- Exclude execution outputs, exception screenshots, logs, and local caches from the repository.
-- Distinguish design-time images such as `.screenshots` from runtime exception screenshots; do not remove required design resources without checking them.
-- Add an appropriate `LICENSE` file separately to define usage and distribution rights. This README does not define a license.
-
-This document was prepared by inspecting the current project files and Excel structure; it does not report an end-to-end run against live Skyscanner, Orchestrator, or email services.
